@@ -1,0 +1,41 @@
+﻿(define (domain agenteSeguranca)
+    (:requirements :strips )
+    (:predicates (Em ?s) (Sala ?s) (Corredor ?c) (Apagada ?s) (Acesa ?s) (Janela ?s ?j) 
+        (Aberta ?j) (Fechada ?j) (Porta ?s1 ?s2 ?p)
+    )
+    
+    (:action mover  :parameters (?s1 ?s2 ?p)
+                    :precondition (and (Em ?s1) (Sala ?s1) (Sala ?s2) (Aberta ?p) (Porta ?s1 ?s2 ?p) )
+                    :effect (and (Em ?s2) (not (Em ?s1)) )
+    )
+    
+    (:action apagar :parameters (?s)
+                    :precondition (and (Em ?s) (Acesa ?s) (Sala ?s))
+                    :effect (and (Apagada ?s) (not (Acesa ?s)) )
+    )
+    
+    (:action acender :parameters (?s)
+                    :precondition (and (Em ?s) (Apagada ?s) (Sala ?s))
+                    :effect (and (Acesa ?s) (not (Apagada ?s)) )
+    )
+    
+    (:action fecharJanela :parameters (?j ?s)
+                    :precondition (and (Em ?s) (Janela ?s ?j) (Sala ?s) (Aberta ?j))
+                    :effect (and (Fechada ?j) (not (Aberta ?s)) )
+    )
+    
+    (:action abrirJanela :parameters (?j ?s)
+                    :precondition (and (Em ?s) (Janela ?s ?j) (Sala ?s) (Fechada ?j))
+                    :effect (and (Aberta ?j) (not (Fechada ?s)) )
+    )
+    
+    ;(:action fecharPorta :parameters (?p ?s1 ?s2)
+    ;                :precondition (and (Em ?s1) (Porta ?s1 ?s2 ?p) (Sala ?s1) (Sala ?s2) (Aberta ?p))
+    ;                :effect (and (Fechada ?p) (not (Aberta ?p)) )
+    ;)
+    
+    (:action abrirPorta :parameters (?p ?s1 ?s2)
+                    :precondition (and (Em ?s1) (Porta ?s1 ?s2 ?p) (Sala ?s1) (Sala ?s2) (Fechada ?p))
+                    :effect (and (Aberta ?p) (not (Fechada ?p)) )
+    )
+)
