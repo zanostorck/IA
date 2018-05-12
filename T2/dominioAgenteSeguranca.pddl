@@ -19,17 +19,17 @@
     )
     
     (:action apagar :parameters (?s)
-                    :precondition (and (Em ?s) (Acesa ?s) (Sala ?s))
+                    :precondition (and (Em ?s) (Sala ?s) (Acesa ?s) )
                     :effect (and (Apagada ?s) (not (Acesa ?s)) )
     )
     
     (:action acender :parameters (?s)
-                    :precondition (and (Em ?s) (Apagada ?s) (Sala ?s))
+                    :precondition (and (Em ?s) (Sala ?s) (Apagada ?s) )
                     :effect (and (Acesa ?s) (not (Apagada ?s)) )
     )
     
     (:action fecharJanela :parameters (?j ?s)
-                    :precondition (and (Em ?s) (Janela ?s ?j) (Sala ?s) (JanelaAberta ?j))
+                    :precondition (and (Em ?s) (Janela ?s ?j) (Sala ?s) (JanelaAberta ?j) (Acesa ?s))
                     :effect (and (JanelaFechada ?j) (not (JanelaAberta ?j)) )
     )
     
@@ -38,8 +38,24 @@
                     :effect (and (JanelaAberta ?j) (not (JanelaFechada ?j)) )
     )
     
-    (:action abrirPorta :parameters (?p ?s1 ?s2)
-                    :precondition (and (Em ?s1) (Porta ?s1 ?s2 ?p) (Sala ?s1) (Sala ?s2) (PortaFechada ?p))
+    (:action abrirPortaEsquerda :parameters (?p ?s1 ?s2)
+                    :precondition (and (Em ?s1) (Sala ?s1) (Sala ?s2) (Porta ?s1 ?s2 ?p)  (PortaFechada ?p))
                     :effect (and (PortaAberta ?p) (not (PortaFechada ?p)) )
     )
+    
+    (:action abrirPortaDireita :parameters (?p ?s1 ?s2)
+                    :precondition (and (Em ?s2) (Sala ?s1) (Sala ?s2) (Porta ?s1 ?s2 ?p)  (PortaFechada ?p))
+                    :effect (and (PortaAberta ?p) (not (PortaFechada ?p)) )
+    )
+    
+    (:action fecharPortaEsquerda :parameters (?p ?s1 ?s2)
+                    :precondition (and (Em ?s2) (Sala ?s1) (Sala ?s2) (Porta ?s1 ?s2 ?p)  (PortaAberta ?p))
+                    :effect (and (PortaFechada ?p) (not (PortaAberta ?p)) )
+    )
+    
+    (:action fecharPortaDireita :parameters (?p ?s1 ?s2)
+                    :precondition (and (Em ?s1) (Sala ?s1) (Sala ?s2) (Porta ?s1 ?s2 ?p)  (PortaAberta ?p))
+                    :effect (and (PortaFechada ?p) (not (PortaAberta ?p)) )
+    )
+    
 )
