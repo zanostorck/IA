@@ -1,0 +1,60 @@
+Lógica fuzzy:
+
+Exercicio Pistola X Faca: 
+
+
+R1: SE (o inimigo estiver longe OU não estiver longe) E
+ a quantidade de balas for suficiente
+	ENTÃO use a pistola
+R2: SE o inimigo não estiver longe E a quantidade de balas for insuficiente
+	ENTÃO use a faca
+
+
+A) Inimigo a 2.5m e 3 balas
+
+	longe(2.5) -> (2.5-0)/(5-0) = 0.5
+	not(longe(2.5)) -> 1-longe(2.5) = 0.5
+
+	suficiente(3) -> 1
+	not(suficiente(3)) -> 1-suficiente(3) = 0
+
+	Grau de ativação de R1 = max(0.5,0.5) = 0.5 -> min(0.5,1) = 0.5
+	Grau de ativação de R2 = min(0.5,0) = 0
+
+	Conclusão: usar pistola
+
+B) Inimigo a 4m e 2 balas
+	
+	longe(4) -> (4-0)/(5-0) = 0.8
+	not(longe(4)) -> 1-longe(4) = 0.2
+
+	suficiente(2) -> (2-0)/(3-0) = 0.67
+	not(suficiente(2)) -> 1-suficiente(2) = 0.33
+
+	Grau de ativação de R1 = (max(0.8,0.2)) = 0.8
+				 (min(0.8,0.67) = 0.67
+
+	Grau de ativação de R2 = min(0.2,0.33) = 0.2
+
+	Conclusão: usar pistola
+	
+	
+2)
+a) energia = 55 -> alta(55) = (55 - 0)/(90 - 0) = 0.61
+		-> nao_alta(55) = 1-0.61 = 0.39
+
+   balas = 8	-> muita(8) = (8 - 0)/(20 - 0) = 0.4
+		-> nao_muita(8) = 1-0.4 = 0.6
+
+	R1 = alta & muita = min(0.61,0.4) = 0.4
+	R2 = alta || nao_muita max(0.61,0.6) = 0.61
+
+   Deffuzyfication:
+
+	z = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
+	fraco(x) = (0 ~ 0.6)
+	forte(x) = (0 ~ 0.4)
+
+	Centroide:
+	v = (10*0.6 + 20*0.6 + 30*0.6 + 40*0.4 + 50*0.4 + 60*0.4 + 70*0.4 + 80*0.4 + 90*0.4 + 100*0.4)/(3*0.6+7*0.4) = 50.43
+
