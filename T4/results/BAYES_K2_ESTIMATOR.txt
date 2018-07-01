@@ -1,0 +1,197 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     treino_optdigits
+Instances:    3823
+Attributes:   65
+              bloco_00
+              bloco_01
+              bloco_02
+              bloco_03
+              bloco_04
+              bloco_05
+              bloco_06
+              bloco_07
+              bloco_10
+              bloco_11
+              bloco_12
+              bloco_13
+              bloco_14
+              bloco_15
+              bloco_16
+              bloco_17
+              bloco_20
+              bloco_21
+              bloco_22
+              bloco_23
+              bloco_24
+              bloco_25
+              bloco_26
+              bloco_27
+              bloco_30
+              bloco_31
+              bloco_32
+              bloco_33
+              bloco_34
+              bloco_35
+              bloco_36
+              bloco_37
+              bloco_40
+              bloco_41
+              bloco_42
+              bloco_43
+              bloco_44
+              bloco_45
+              bloco_46
+              bloco_47
+              bloco_50
+              bloco_51
+              bloco_52
+              bloco_53
+              bloco_54
+              bloco_55
+              bloco_56
+              bloco_57
+              bloco_60
+              bloco_61
+              bloco_62
+              bloco_63
+              bloco_64
+              bloco_65
+              bloco_66
+              bloco_67
+              bloco_70
+              bloco_71
+              bloco_72
+              bloco_73
+              bloco_74
+              bloco_75
+              bloco_76
+              bloco_77
+              class_digito
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=65 #classindex=64
+Network structure (nodes followed by parents)
+bloco_00(1): class_digito 
+bloco_01(2): class_digito 
+bloco_02(6): class_digito 
+bloco_03(5): class_digito 
+bloco_04(5): class_digito 
+bloco_05(4): class_digito 
+bloco_06(4): class_digito 
+bloco_07(2): class_digito 
+bloco_10(1): class_digito 
+bloco_11(3): class_digito 
+bloco_12(6): class_digito 
+bloco_13(5): class_digito 
+bloco_14(5): class_digito 
+bloco_15(6): class_digito 
+bloco_16(3): class_digito 
+bloco_17(2): class_digito 
+bloco_20(1): class_digito 
+bloco_21(4): class_digito 
+bloco_22(4): class_digito 
+bloco_23(5): class_digito 
+bloco_24(5): class_digito 
+bloco_25(5): class_digito 
+bloco_26(4): class_digito 
+bloco_27(2): class_digito 
+bloco_30(1): class_digito 
+bloco_31(3): class_digito 
+bloco_32(5): class_digito 
+bloco_33(5): class_digito 
+bloco_34(5): class_digito 
+bloco_35(6): class_digito 
+bloco_36(6): class_digito 
+bloco_37(1): class_digito 
+bloco_40(1): class_digito 
+bloco_41(5): class_digito 
+bloco_42(4): class_digito 
+bloco_43(4): class_digito 
+bloco_44(5): class_digito 
+bloco_45(5): class_digito 
+bloco_46(5): class_digito 
+bloco_47(1): class_digito 
+bloco_50(2): class_digito 
+bloco_51(4): class_digito 
+bloco_52(6): class_digito 
+bloco_53(5): class_digito 
+bloco_54(5): class_digito 
+bloco_55(4): class_digito 
+bloco_56(4): class_digito 
+bloco_57(2): class_digito 
+bloco_60(2): class_digito 
+bloco_61(4): class_digito 
+bloco_62(4): class_digito 
+bloco_63(5): class_digito 
+bloco_64(4): class_digito 
+bloco_65(4): class_digito 
+bloco_66(5): class_digito 
+bloco_67(2): class_digito 
+bloco_70(1): class_digito 
+bloco_71(2): class_digito 
+bloco_72(6): class_digito 
+bloco_73(5): class_digito 
+bloco_74(4): class_digito 
+bloco_75(5): class_digito 
+bloco_76(5): class_digito 
+bloco_77(3): class_digito 
+class_digito(10): 
+LogScore Bayes: -206614.46322971437
+LogScore BDeu: -213076.7324775758
+LogScore MDL: -211944.88636537528
+LogScore ENTROPY: -204442.6111930783
+LogScore AIC: -206261.61119307828
+
+
+Time taken to build model: 0.09 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.12 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3574               93.4868 %
+Incorrectly Classified Instances       249                6.5132 %
+Kappa statistic                          0.9276
+Mean absolute error                      0.0134
+Root mean squared error                  0.1068
+Relative absolute error                  7.4287 %
+Root relative squared error             35.6131 %
+Total Number of Instances             3823     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.987    0.001    0.995      0.987    0.991      0.990    1.000     0.998     0
+                 0.920    0.008    0.927      0.920    0.924      0.915    0.996     0.968     1
+                 0.932    0.004    0.962      0.932    0.947      0.941    0.998     0.985     2
+                 0.936    0.005    0.953      0.936    0.944      0.938    0.997     0.985     3
+                 0.917    0.006    0.947      0.917    0.932      0.924    0.995     0.972     4
+                 0.880    0.001    0.985      0.880    0.930      0.924    0.997     0.981     5
+                 0.987    0.002    0.979      0.987    0.983      0.981    0.999     0.995     6
+                 0.974    0.010    0.920      0.974    0.946      0.940    0.999     0.991     7
+                 0.947    0.012    0.900      0.947    0.923      0.915    0.997     0.974     8
+                 0.869    0.024    0.804      0.869    0.835      0.817    0.987     0.908     9
+Weighted Avg.    0.935    0.007    0.937      0.935    0.935      0.928    0.996     0.976     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 371   0   0   0   3   0   1   0   0   1 |   a = 0
+   0 358  10   1   0   0   1   1   3  15 |   b = 1
+   0   0 354   0   0   0   1   3  15   7 |   c = 2
+   0   1   3 364   0   2   0   3   5  11 |   d = 3
+   0   2   0   0 355   0   3  16   4   7 |   e = 4
+   0   1   0   4   2 331   1   0   2  35 |   f = 5
+   0   4   0   0   1   0 372   0   0   0 |   g = 6
+   0   2   0   0   2   0   0 377   4   2 |   h = 7
+   1  13   0   0   1   1   1   0 360   3 |   i = 8
+   1   5   1  13  11   2   0  10   7 332 |   j = 9
+
