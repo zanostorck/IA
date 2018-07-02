@@ -1,0 +1,197 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     treino_optdigits
+Instances:    3823
+Attributes:   65
+              bloco_00
+              bloco_01
+              bloco_02
+              bloco_03
+              bloco_04
+              bloco_05
+              bloco_06
+              bloco_07
+              bloco_10
+              bloco_11
+              bloco_12
+              bloco_13
+              bloco_14
+              bloco_15
+              bloco_16
+              bloco_17
+              bloco_20
+              bloco_21
+              bloco_22
+              bloco_23
+              bloco_24
+              bloco_25
+              bloco_26
+              bloco_27
+              bloco_30
+              bloco_31
+              bloco_32
+              bloco_33
+              bloco_34
+              bloco_35
+              bloco_36
+              bloco_37
+              bloco_40
+              bloco_41
+              bloco_42
+              bloco_43
+              bloco_44
+              bloco_45
+              bloco_46
+              bloco_47
+              bloco_50
+              bloco_51
+              bloco_52
+              bloco_53
+              bloco_54
+              bloco_55
+              bloco_56
+              bloco_57
+              bloco_60
+              bloco_61
+              bloco_62
+              bloco_63
+              bloco_64
+              bloco_65
+              bloco_66
+              bloco_67
+              bloco_70
+              bloco_71
+              bloco_72
+              bloco_73
+              bloco_74
+              bloco_75
+              bloco_76
+              bloco_77
+              class_digito
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=65 #classindex=64
+Network structure (nodes followed by parents)
+bloco_00(1): class_digito 
+bloco_01(2): class_digito 
+bloco_02(6): class_digito 
+bloco_03(5): class_digito 
+bloco_04(5): class_digito 
+bloco_05(4): class_digito 
+bloco_06(4): class_digito 
+bloco_07(2): class_digito 
+bloco_10(1): class_digito 
+bloco_11(3): class_digito 
+bloco_12(6): class_digito 
+bloco_13(5): class_digito 
+bloco_14(5): class_digito 
+bloco_15(6): class_digito 
+bloco_16(3): class_digito 
+bloco_17(2): class_digito 
+bloco_20(1): class_digito 
+bloco_21(4): class_digito 
+bloco_22(4): class_digito 
+bloco_23(5): class_digito 
+bloco_24(5): class_digito 
+bloco_25(5): class_digito 
+bloco_26(4): class_digito 
+bloco_27(2): class_digito 
+bloco_30(1): class_digito 
+bloco_31(3): class_digito 
+bloco_32(5): class_digito 
+bloco_33(5): class_digito 
+bloco_34(5): class_digito 
+bloco_35(6): class_digito 
+bloco_36(6): class_digito 
+bloco_37(1): class_digito 
+bloco_40(1): class_digito 
+bloco_41(5): class_digito 
+bloco_42(4): class_digito 
+bloco_43(4): class_digito 
+bloco_44(5): class_digito 
+bloco_45(5): class_digito 
+bloco_46(5): class_digito 
+bloco_47(1): class_digito 
+bloco_50(2): class_digito 
+bloco_51(4): class_digito 
+bloco_52(6): class_digito 
+bloco_53(5): class_digito 
+bloco_54(5): class_digito 
+bloco_55(4): class_digito 
+bloco_56(4): class_digito 
+bloco_57(2): class_digito 
+bloco_60(2): class_digito 
+bloco_61(4): class_digito 
+bloco_62(4): class_digito 
+bloco_63(5): class_digito 
+bloco_64(4): class_digito 
+bloco_65(4): class_digito 
+bloco_66(5): class_digito 
+bloco_67(2): class_digito 
+bloco_70(1): class_digito 
+bloco_71(2): class_digito 
+bloco_72(6): class_digito 
+bloco_73(5): class_digito 
+bloco_74(4): class_digito 
+bloco_75(5): class_digito 
+bloco_76(5): class_digito 
+bloco_77(3): class_digito 
+class_digito(10): 
+LogScore Bayes: -206614.46322971437
+LogScore BDeu: -213076.7324775758
+LogScore MDL: -211944.88636537528
+LogScore ENTROPY: -204442.6111930783
+LogScore AIC: -206261.61119307828
+
+
+Time taken to build model: 0.92 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.16 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1621               90.2059 %
+Incorrectly Classified Instances       176                9.7941 %
+Kappa statistic                          0.8912
+Mean absolute error                      0.0202
+Root mean squared error                  0.1315
+Relative absolute error                 11.2468 %
+Root relative squared error             43.8352 %
+Total Number of Instances             1797     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.978    0.001    0.989      0.978    0.983      0.981    0.999     0.996     0
+                 0.824    0.019    0.833      0.824    0.829      0.810    0.984     0.913     1
+                 0.870    0.011    0.895      0.870    0.883      0.870    0.989     0.946     2
+                 0.858    0.006    0.940      0.858    0.897      0.887    0.992     0.960     3
+                 0.950    0.014    0.887      0.950    0.917      0.908    0.994     0.974     4
+                 0.940    0.004    0.961      0.940    0.950      0.945    0.998     0.987     5
+                 0.956    0.001    0.989      0.956    0.972      0.969    0.999     0.992     6
+                 0.927    0.009    0.922      0.927    0.925      0.916    0.997     0.975     7
+                 0.833    0.017    0.843      0.833    0.838      0.821    0.987     0.918     8
+                 0.883    0.027    0.783      0.883    0.830      0.812    0.984     0.848     9
+Weighted Avg.    0.902    0.011    0.904      0.902    0.903      0.892    0.992     0.951     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 174   0   0   0   3   1   0   0   0   0 |   a = 0
+   0 150  15   1   0   0   1   0   3  12 |   b = 1
+   0   7 154   2   0   0   0   1   9   4 |   c = 2
+   0   1   2 157   0   1   0   8   5   9 |   d = 3
+   0   3   0   0 172   0   0   2   3   1 |   e = 4
+   0   0   0   1   2 171   1   0   1   6 |   f = 5
+   2   4   0   0   1   1 173   0   0   0 |   g = 6
+   0   0   0   0   9   0   0 166   2   2 |   h = 7
+   0  14   1   1   1   1   0   1 145  10 |   i = 8
+   0   1   0   5   6   3   0   2   4 159 |   j = 9
+
