@@ -1,0 +1,125 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     treino_optdigits
+Instances:    3823
+Attributes:   65
+              bloco_00
+              bloco_01
+              bloco_02
+              bloco_03
+              bloco_04
+              bloco_05
+              bloco_06
+              bloco_07
+              bloco_10
+              bloco_11
+              bloco_12
+              bloco_13
+              bloco_14
+              bloco_15
+              bloco_16
+              bloco_17
+              bloco_20
+              bloco_21
+              bloco_22
+              bloco_23
+              bloco_24
+              bloco_25
+              bloco_26
+              bloco_27
+              bloco_30
+              bloco_31
+              bloco_32
+              bloco_33
+              bloco_34
+              bloco_35
+              bloco_36
+              bloco_37
+              bloco_40
+              bloco_41
+              bloco_42
+              bloco_43
+              bloco_44
+              bloco_45
+              bloco_46
+              bloco_47
+              bloco_50
+              bloco_51
+              bloco_52
+              bloco_53
+              bloco_54
+              bloco_55
+              bloco_56
+              bloco_57
+              bloco_60
+              bloco_61
+              bloco_62
+              bloco_63
+              bloco_64
+              bloco_65
+              bloco_66
+              bloco_67
+              bloco_70
+              bloco_71
+              bloco_72
+              bloco_73
+              bloco_74
+              bloco_75
+              bloco_76
+              bloco_77
+              class_digito
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 1.82 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1760               97.941  %
+Incorrectly Classified Instances        37                2.059  %
+Kappa statistic                          0.9771
+Mean absolute error                      0.0046
+Root mean squared error                  0.0641
+Relative absolute error                  2.5427 %
+Root relative squared error             21.3641 %
+Total Number of Instances             1797     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     0
+                 0.995    0.008    0.933      0.995    0.963      0.959    0.993     0.928     1
+                 0.989    0.000    1.000      0.989    0.994      0.994    0.994     0.990     2
+                 0.978    0.002    0.978      0.978    0.978      0.976    0.988     0.959     3
+                 0.983    0.002    0.983      0.983    0.983      0.982    0.991     0.969     4
+                 0.984    0.001    0.989      0.984    0.986      0.985    0.991     0.974     5
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     6
+                 0.983    0.001    0.989      0.983    0.986      0.984    0.991     0.974     7
+                 0.937    0.003    0.970      0.937    0.953      0.948    0.967     0.915     8
+                 0.944    0.005    0.955      0.944    0.950      0.944    0.970     0.908     9
+Weighted Avg.    0.979    0.002    0.980      0.979    0.979      0.977    0.989     0.962     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 178   0   0   0   0   0   0   0   0   0 |   a = 0
+   0 181   0   0   0   0   0   0   1   0 |   b = 1
+   0   2 175   0   0   0   0   0   0   0 |   c = 2
+   0   0   0 179   0   0   0   2   0   2 |   d = 3
+   0   2   0   0 178   0   0   0   1   0 |   e = 4
+   0   0   0   0   1 179   0   0   0   2 |   f = 5
+   0   0   0   0   0   0 181   0   0   0 |   g = 6
+   0   0   0   0   0   0   0 176   0   3 |   h = 7
+   0   9   0   1   0   0   0   0 163   1 |   i = 8
+   0   0   0   3   2   2   0   0   3 170 |   j = 9
+
