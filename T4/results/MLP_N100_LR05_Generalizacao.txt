@@ -2984,49 +2984,49 @@ Class 9
     Node 9
 
 
-Time taken to build model: 18.06 seconds
+Time taken to build model: 21.04 seconds
 
 === Evaluation on test set ===
 
-Time taken to test model on supplied test set: 0.12 seconds
+Time taken to test model on supplied test set: 0.01 seconds
 
 === Summary ===
 
-Correctly Classified Instances        1742               96.9393 %
-Incorrectly Classified Instances        55                3.0607 %
-Kappa statistic                          0.966 
-Mean absolute error                      0.0088
-Root mean squared error                  0.0704
-Relative absolute error                  4.9076 %
-Root relative squared error             23.4769 %
-Total Number of Instances             1797     
+Correctly Classified Instances         191               95.5    %
+Incorrectly Classified Instances         9                4.5    %
+Kappa statistic                          0.95  
+Mean absolute error                      0.0125
+Root mean squared error                  0.0915
+Relative absolute error                  6.9278 %
+Root relative squared error             30.4857 %
+Total Number of Instances              200     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.989    0.001    0.994      0.989    0.992      0.991    1.000     1.000     0
-                 0.995    0.006    0.948      0.995    0.971      0.967    1.000     0.996     1
-                 0.994    0.002    0.978      0.994    0.986      0.984    1.000     0.999     2
-                 0.951    0.000    1.000      0.951    0.975      0.972    0.999     0.994     3
-                 0.983    0.003    0.973      0.983    0.978      0.976    1.000     0.998     4
-                 0.984    0.007    0.937      0.984    0.960      0.955    0.999     0.993     5
-                 0.989    0.000    1.000      0.989    0.994      0.994    0.999     0.997     6
-                 0.922    0.002    0.982      0.922    0.951      0.946    0.999     0.995     7
-                 0.908    0.002    0.975      0.908    0.940      0.935    0.994     0.978     8
-                 0.978    0.010    0.917      0.978    0.946      0.941    0.998     0.983     9
-Weighted Avg.    0.969    0.003    0.970      0.969    0.969      0.966    0.999     0.994     
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     0
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     1
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     2
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     3
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     4
+                 0.700    0.017    0.824      0.700    0.757      0.735    0.954     0.819     5
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     6
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     7
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     8
+                 0.850    0.033    0.739      0.850    0.791      0.768    0.975     0.768     9
+Weighted Avg.    0.955    0.005    0.956      0.955    0.955      0.950    0.993     0.959     
 
 === Confusion Matrix ===
 
-   a   b   c   d   e   f   g   h   i   j   <-- classified as
- 176   0   0   0   1   1   0   0   0   0 |   a = 0
-   0 181   1   0   0   0   0   0   0   0 |   b = 1
-   0   1 176   0   0   0   0   0   0   0 |   c = 2
-   0   0   3 174   0   1   0   2   0   3 |   d = 3
-   0   1   0   0 178   0   0   1   1   0 |   e = 4
-   0   0   0   0   0 179   0   0   1   2 |   f = 5
-   0   0   0   0   2   0 179   0   0   0 |   g = 6
-   0   0   0   0   1   6   0 165   1   6 |   h = 7
-   0   8   0   0   1   2   0   0 158   5 |   i = 8
-   1   0   0   0   0   2   0   0   1 176 |   j = 9
+  a  b  c  d  e  f  g  h  i  j   <-- classified as
+ 20  0  0  0  0  0  0  0  0  0 |  a = 0
+  0 20  0  0  0  0  0  0  0  0 |  b = 1
+  0  0 20  0  0  0  0  0  0  0 |  c = 2
+  0  0  0 20  0  0  0  0  0  0 |  d = 3
+  0  0  0  0 20  0  0  0  0  0 |  e = 4
+  0  0  0  0  0 14  0  0  0  6 |  f = 5
+  0  0  0  0  0  0 20  0  0  0 |  g = 6
+  0  0  0  0  0  0  0 20  0  0 |  h = 7
+  0  0  0  0  0  0  0  0 20  0 |  i = 8
+  0  0  0  0  0  3  0  0  0 17 |  j = 9
 
