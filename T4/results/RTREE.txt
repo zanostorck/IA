@@ -1010,11 +1010,11 @@ bloco_12 >= 9.5
 
 Size of the tree : 931
 
-Time taken to build model: 0.03 seconds
+Time taken to build model: 0.02 seconds
 
 === Evaluation on training set ===
 
-Time taken to test model on training data: 0.03 seconds
+Time taken to test model on training data: 0.02 seconds
 
 === Summary ===
 
