@@ -1,0 +1,10 @@
+Quais os paradigmas de aprendizagem que estudamos ? Quais as suas diferenças ? A que tarefas eles atendem ?
+Quais a tarefa que o k-NN trata ? Quais as suas vantagens e as suas desvantagens ?
+Quais tarefas o k-Means resolve ? Quais as suas vantagens e as suas desvantagens ?
+Redes neurais do tipo Perceptron são adequadas para tarefas de classificação. Quantas classes um neurônio consegue aprender ?  Quantos neurônios são necessários na camada de saída para a rede aprender 5 classes distintas ?
+Qual a limitação da rede Perceptron?
+Quais as etapas do algoritmo de aprendizagem backpropagation ? O que acontece em cada uma delas?
+Explique a topologia 10x30x20x5.  Que rede é essa ?
+O que é uma época ?
+O que é o erro médio quadrado gerado pela rede ?
+Na aprendizagem por reforço, podemos combinar algoritmos genéticos com redes neurais. Como ? Explique.
